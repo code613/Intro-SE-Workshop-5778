@@ -1,6 +1,6 @@
 package main.primitives;
 
-public class Point2D {
+public class Point2D  implements Comparable<Point2D>{
     private Coordinate _x;
     private Coordinate _y;
 
@@ -45,5 +45,14 @@ public class Point2D {
     @Override
     public String toString() {
         return String.format("(%f , %f)",get_x(),get_y());
+    }
+
+    @Override
+    public int compareTo(Point2D point) {
+        if (this.get_x().compareTo(point.get_x()) == 0 && this.get_y().compareTo(point.get_y()) == 0)
+        {
+            return 0;
+        }
+        return 1;
     }
 }
