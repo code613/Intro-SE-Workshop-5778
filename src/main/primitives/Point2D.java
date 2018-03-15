@@ -44,7 +44,7 @@ public class Point2D  implements Comparable<Point2D>{
 
     @Override
     public String toString() {
-        return String.format("(%f , %f)",get_x(),get_y());
+        return String.format("(%f , %f)",get_x().get_coordinate(),get_y().get_coordinate());
     }
 
     @Override
