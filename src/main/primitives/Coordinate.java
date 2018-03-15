@@ -15,15 +15,18 @@ public class Coordinate implements Comparable<Coordinate> {
 
     // constructors
 
-    public Coordinate(double coordinate) {
-        set_coordinate(coordinate);
-    }
-    public Coordinate(Coordinate  coordinate) {
-        set_coordinate(coordinate.get_coordinate());
-    }
     public Coordinate() {
         set_coordinate(0.0);
     }
+
+    public Coordinate(double coordinate) {
+        set_coordinate(coordinate);
+    }
+
+    public Coordinate(Coordinate  coordinate) {
+        set_coordinate(coordinate.get_coordinate());
+    }
+
 
     // utilities and methods
 
