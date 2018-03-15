@@ -4,6 +4,10 @@ public class Point3D extends Point2D{
 
     private  Coordinate _z;
 
+    public Point3D(Point3D pt) {
+        this(pt.get_x(),pt.get_y(),pt.get_z());
+    }
+
     public Coordinate get_z() {
         return new Coordinate(_z);
     }
